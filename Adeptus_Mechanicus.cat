@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53c3521c-d95d-49a2-87a3-a8c6326bc158" name="Adeptus Mechanicus" revision="15" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="" library="false" gameSystemId="ae75c91d-78e4-4644-a3f2-6091835ce9cf" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="53c3521c-d95d-49a2-87a3-a8c6326bc158" name="Adeptus Mechanicus" revision="16" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="" library="false" gameSystemId="ae75c91d-78e4-4644-a3f2-6091835ce9cf" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
     <publication id="ffc39854--pubN65994" name="BFG Rulebook"/>
@@ -2658,26 +2658,18 @@ Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on
             <characteristic name="Effects" typeId="fb6d26c9-b74e-49e7-906a-4e879fc4ccbc">A Fabricator General Epiklesis Dune can elect up to any one desired item from the Adeptus Mechanicus refit table (Gift) for their own ship as part of their point cost, in addition to (and before) the refit the ship rolls for normally. </characteristic>
           </characteristics>
         </profile>
+        <profile id="e8d7-cb12-bf36-445a" name="Fabricator General" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+          <characteristics>
+            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">10</characteristic>
+            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323"/>
+            <characteristic name="Pg." typeId="50672e23232344415441232323"/>
+          </characteristics>
+        </profile>
       </profiles>
       <categoryLinks>
         <categoryLink id="0b40-2c05-2751-0898" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="5b78-611c-b720-65e9" name="Rank" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b51c-2e93-9c4f-2d5b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fec6-8085-88ca-5c2f" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="09ec-b055-c5ea-dffd" name="Fabricator General" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
-              <characteristics>
-                <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">10</characteristic>
-                <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323"/>
-                <characteristic name="Pg." typeId="50672e23232344415441232323"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntryGroup>
         <selectionEntryGroup id="715a-c83d-61c4-6fd8" name="Re-Rolls" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b573-af41-16ed-919b" type="max"/>
