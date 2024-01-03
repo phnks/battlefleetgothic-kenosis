@@ -1,4 +1,4 @@
-Battlefleet Gothic
+Battlefleet Gothic: Kenosis Edition
 ==================
 
 #### Contents ####
