@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ae75c91d-78e4-4644-a3f2-6091835ce9cf" name="Battlefleet Gothic: Kenosis Edition" revision="48" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ae75c91d-78e4-4644-a3f2-6091835ce9cf" name="Battlefleet Gothic: Kenosis Edition" revision="49" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="130eece3-6d5c-4302-9e56-e272bceaed62" name="2010 Compendium"/>
     <publication id="39fc8e15-c469-432a-ad23-4794fe683f4d" name="Battlefleet Gothic Magazine 14"/>
@@ -115,7 +115,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
     <forceEntry id="b4658b18-83b7-4fde-bcb2-31dbcd1af24c" name="Unbound" publicationId="22305932-74c0-4cc1-a452-9f781940f429" hidden="false">
       <categoryLinks>
         <categoryLink id="55acc74c-cba2-483b-9e75-534059bd683e" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="1437a511-685d-4396-900e-fb7ecafb6730" primary="false"/>
-        <categoryLink id="4ff6ab40-2a1b-4684-9dbe-7ea197df9d05" name="Battleships" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="4ff6ab40-2a1b-4684-9dbe-7ea197df9d05" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
         <categoryLink id="0d0ea133-d35c-4c56-814e-a4017093e096" name="Cruisers" hidden="false" targetId="2f122bed-e8fd-4ca8-a8fd-bbb40cc56a94" primary="false"/>
         <categoryLink id="936fc9c4-bb19-45ee-8512-1b7998676ad9" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
         <categoryLink id="99594534-4b78-4645-830b-3b022a076243" name="Fleet Commanders" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false">
@@ -128,6 +128,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
         <categoryLink id="b2c3a456-71a3-445d-8f84-a646cc113af5" name="Ordnance" hidden="false" targetId="7eb1740f-375a-44c9-993a-d3c756eb96db" primary="false"/>
         <categoryLink id="45c6dbf2-9279-48ca-aa62-d83cd9744899" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
         <categoryLink id="61f297ac-d501-4c56-87c4-a36d7b0eb1bd" name="Reserves" hidden="false" targetId="a8b3d4c1-aaaf-4259-9f18-088e8344dbb2" primary="false"/>
+        <categoryLink id="4964-0d5d-12e7-ebae" name="Flagship" hidden="false" targetId="8d32-af64-a555-fd13" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
