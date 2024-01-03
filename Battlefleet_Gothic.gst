@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ae75c91d-78e4-4644-a3f2-6091835ce9cf" name="Battlefleet Gothic: Kenosis Edition" revision="47" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme></readme>
+<gameSystem id="ae75c91d-78e4-4644-a3f2-6091835ce9cf" name="Battlefleet Gothic: Kenosis Edition" revision="48" battleScribeVersion="2.03" authorName="" authorContact="" authorUrl="" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="130eece3-6d5c-4302-9e56-e272bceaed62" name="2010 Compendium"/>
     <publication id="39fc8e15-c469-432a-ad23-4794fe683f4d" name="Battlefleet Gothic Magazine 14"/>
@@ -65,7 +64,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
     <categoryEntry id="466c65657420436f6d6d616e6465727323232344415441232323" name="Fleet Commander" publicationId="53c3ef42-35ae-4b6f-b0cf-f45ba6e5d725" hidden="false"/>
     <categoryEntry id="4361706974616c20536869707323232344415441232323" name="Battleship" publicationId="53c3ef42-35ae-4b6f-b0cf-f45ba6e5d725" hidden="false">
       <infoLinks>
-        <infoLink id="cca6efc9-4b37-4d4b-89bf-ff7e006ac1ac" name="DAMAGE" hidden="false" targetId="8520922d-59e0-4838-9104-2b7edc7332fe" type="profile"/>
+        <infoLink id="cca6efc9-4b37-4d4b-89bf-ff7e006ac1ac" name="*DAMAGE" hidden="false" targetId="8520922d-59e0-4838-9104-2b7edc7332fe" type="profile"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="4573636f72747323232344415441232323" name="Escort" publicationId="53c3ef42-35ae-4b6f-b0cf-f45ba6e5d725" hidden="false"/>
@@ -77,7 +76,7 @@ The additional ships compendium cites it&apos;s sources so site those instead of
     <categoryEntry id="2f122bed-e8fd-4ca8-a8fd-bbb40cc56a94" name="Cruiser" publicationId="53c3ef42-35ae-4b6f-b0cf-f45ba6e5d725" hidden="false">
       <comment>cruisers are cruisers and CV&apos;s to differentiate them from battle cruisers which are both cruisers and battlecruisers. They can&apos;t count for themselves</comment>
       <infoLinks>
-        <infoLink id="9e66023f-6fd6-400e-b458-0b9f7e8b8e4f" name="DAMAGE" hidden="false" targetId="8520922d-59e0-4838-9104-2b7edc7332fe" type="profile"/>
+        <infoLink id="9e66023f-6fd6-400e-b458-0b9f7e8b8e4f" name="*DAMAGE" hidden="false" targetId="8520922d-59e0-4838-9104-2b7edc7332fe" type="profile"/>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="e9007ae5-b296-4ff6-b2ce-f7658a3b0c74" name="Grand Cruiser" publicationId="53c3ef42-35ae-4b6f-b0cf-f45ba6e5d725" hidden="false">
@@ -104,6 +103,11 @@ The additional ships compendium cites it&apos;s sources so site those instead of
       <comment>Battle cruisers which are both cruisers and battlecruisers, but they can&apos;t count for themselves</comment>
       <infoLinks>
         <infoLink id="094a4812-2c39-4feb-b68e-054b32f51d97" name="*DAMAGE" hidden="false" targetId="8520922d-59e0-4838-9104-2b7edc7332fe" type="profile"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="8d32-af64-a555-fd13" name="Flagship" publicationId="53c3ef42-35ae-4b6f-b0cf-f45ba6e5d725" hidden="false">
+      <infoLinks>
+        <infoLink id="3f5b-3638-cede-945b" name="*DAMAGE" hidden="false" targetId="8520922d-59e0-4838-9104-2b7edc7332fe" type="profile"/>
       </infoLinks>
     </categoryEntry>
   </categoryEntries>
