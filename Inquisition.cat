@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="de98b58b-b58e-4829-8c63-fddbd7a52955" name="Inquisition" revision="5" battleScribeVersion="2.03" authorName="Tomakokamikaze" authorContact="@Tomakokamikaze @Mont_Fox Dndtonight.com" authorUrl="http://battlescribedata.appspot.com/#/repo/battlefleetgothic" library="false" gameSystemId="ae75c91d-78e4-4644-a3f2-6091835ce9cf" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="ffc39854--pubN65585" name="BFG Ships of Mars"/>
+  </publications>
+  <forceEntries>
+    <forceEntry id="7711ed8f-18c5-4bba-81fb-8fc2e2639142" name="Emperor&apos;s Inquisition Fleet List" publicationId="130eece3-6d5c-4302-9e56-e272bceaed62" page="51" hidden="false">
+      <categoryLinks>
+        <categoryLink id="164f2d03-aca5-44bb-af96-01b3b9076247" name="Fleet Commander" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="false"/>
+        <categoryLink id="6de3abbb-7eac-413c-8af4-d2c4c9fe1a7b" name="Battleship" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="false"/>
+        <categoryLink id="4d1bba06-0006-49d3-8dfd-a5d5982c6739" name="Escorts" hidden="false" targetId="4573636f72747323232344415441232323" primary="false"/>
+        <categoryLink id="adf9a3b9-55e8-4c9d-836c-7eb0ad543c88" name="Special" hidden="false" targetId="5370656369616c23232344415441232323" primary="false"/>
+        <categoryLink id="36c7f886-49d8-489e-a7d6-a9c864df6e97" name="Cruiser" hidden="false" targetId="2f122bed-e8fd-4ca8-a8fd-bbb40cc56a94" primary="false"/>
+        <categoryLink id="91f2544d-dcb2-4c25-b54e-4d9d6cc145e0" name="Grand Cruisers" hidden="false" targetId="e9007ae5-b296-4ff6-b2ce-f7658a3b0c74" primary="false"/>
+        <categoryLink id="52d95143-2272-4504-81d7-5e54c1233f70" name="Battlecruisers &amp; Heavy Cruisers" hidden="false" targetId="1437a511-685d-4396-900e-fb7ecafb6730" primary="false"/>
+        <categoryLink id="8638ea36-1afc-4fde-8625-4585369fbfed" name="Orbital Defences" hidden="false" targetId="51325ddb-29aa-4e44-b608-482cf2dfc52b" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="389185e6-efa7-49d8-ace6-786b1f9afbfe" name="Escort Squadron" page="0" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="69ebe134-63f1-43dd-bade-9de08a3d4c5b" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="352a4b68-fbe3-4830-a09b-668c3747595d" name="+1 Turret" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="increment" field="points" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="389185e6-efa7-49d8-ace6-786b1f9afbfe" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a7f8f084-fddd-48e1-9843-3e8bffe8a7df" name="Escorts" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ea9d60-2a3d-4c0d-9247-78bf76ab09f7" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50aa3dcd-c872-4f11-b93a-bfd17782f51e" type="min"/>
+          </constraints>
+          <rules>
+            <rule id="007bfa0b-31b6-437a-b14b-0b640b2eac87" name="Escorts" publicationId="130eece3-6d5c-4302-9e56-e272bceaed62" page="51" hidden="false">
+              <description>Imperial, Space Marine or Adeptus Mechanicus fleet lists, as appropriate, in any mix desired following the normal rules and restrictions for those fleet lists. For example, if an Inquisitor and his cruiser are leading an Imperial Navy fleet, only Imperial Navy escorts may be taken</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink id="593893b5-c54c-4e19-9128-ab3cb0b5be23" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="5b4a8869-04ff-454d-a030-c9a458a303bb" type="selectionEntry"/>
+            <entryLink id="7a298a7e-579a-48b8-b523-9eeb4998548b" name="Falchion Frigate" hidden="false" collective="false" import="true" targetId="3e106396-c99f-400d-8c73-b25b5038d984" type="selectionEntry"/>
+            <entryLink id="933238ff-9702-4d30-97c3-f4f841ce81c7" name="Firestorm Frigate" hidden="false" collective="false" import="true" targetId="ca96f3b7-3206-4e8a-b7c6-f05ba4e625f9" type="selectionEntry"/>
+            <entryLink id="bc9224ef-679d-432e-b4b6-6a93ce8db36a" name="Gladius Frigate" hidden="false" collective="false" import="true" targetId="775a6485-1c6f-4986-bcce-dd819621fd26" type="selectionEntry"/>
+            <entryLink id="c41e5b09-4ed0-46ff-84f4-1e34aee424b5" name="Hunter Destroyer" hidden="false" collective="false" import="true" targetId="c7157f09-e408-4ed3-afea-cc042436ed98" type="selectionEntry"/>
+            <entryLink id="b7446a50-dcc6-4960-889a-57301684832e" name="Nova Frigate" hidden="false" collective="false" import="true" targetId="b3016d46-d650-4d8e-b125-e05dcf31e48f" type="selectionEntry"/>
+            <entryLink id="338fd7da-5ee9-44e9-8554-e2625deee6fb" name="Sword Frigate" hidden="false" collective="false" import="true" targetId="0556373b-f11e-41c4-9488-24e3985d00d3" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5ed09dc6-aa4c-4ab1-afc8-2ed1de0e7f33" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c43ce182-478b-4f19-b967-bac430ad3113" name="Grey Knights Battlebarge" page="0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4e17b88-9278-49ab-967b-cee164ae8eeb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="13b4342d-0530-4626-9e45-c30f92d220ef" name="Grey Knights Battlebarge Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">3</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eaddccd4-b7b4-4b23-9688-e6f716891a75" name="Grey Knights Battlebarge Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc2b15b4-816d-48d1-8398-19415294fab3" name="Grey Knights Battlebarge Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">12</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c4acbb6-ca35-4114-bd79-e03b419a5413" name="Grey Knights Battlebarge Prow Launch Bays" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawk: 20cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3 Squadrons</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c6d873c-eb41-45da-b0ad-8fbaa24a1bfa" name="Grey Knights Battlebarge Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aec63aa0-a0f0-4c56-a821-46eb47e7bbf5" name="Grey Knights Battlebarge Dorsal Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0fe7d145-2c9f-4edf-8234-0fdb45ba1df3" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+        <rule id="9e2b4e97-bc15-47b9-850b-a718e0247fc2" name="Grey Knights Battlebarge" hidden="false">
+          <description>Grey Knights vessels do not have access to Thunderhawk Annihilators, even when used with a Space Marine Crusade fleet list. Grey Knights are fearsome warriors even among other Space Marines; they may re-roll any boarding action result (the second roll stands).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9a4e7e80-4cab-4c06-9989-495df6e06497" hidden="false" targetId="4361706974616c20536869707323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="feda37b7-7bbe-4522-84eb-b4025297e359" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="440.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e5571aaa-4baf-4a01-b41a-d9981e413c80" name="Grey Knights Strike Cruiser" publicationId="130eece3-6d5c-4302-9e56-e272bceaed62" page="50" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="07dba1e4-48eb-4059-a0c1-6702fbe6d3e6" value="1.0">
+          <repeats>
+            <repeat field="points" scope="force" value="500.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="points" scope="force" value="499.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07dba1e4-48eb-4059-a0c1-6702fbe6d3e6" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0a673c3-b36c-47ae-ac12-cf2811118a9e" type="min"/>
+      </constraints>
+      <profiles>
+        <profile id="6da94e2b-d950-4e1d-8dd1-dfb55e3e81f3" name="Grey Knights Strike Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">6</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8883fa7e-5bc7-44c0-a628-ba12a6aa6d44" name="Grey Knights Strike Cruiser Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b26d9c24-ee6a-4112-9674-b09610f5ceaf" name="Grey Knights Strike Cruiser Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aef6b9e5-e802-4097-aa1b-c96ed156e425" name="Grey Knights Strike Cruiser Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left / Front / Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="778601ad-a0c4-4b31-b268-31425c4a65ad" name="Grey Knights Strike Cruiser" hidden="false">
+          <description>Grey Knights strike cruisers roll +5D6 when on All Ahead Full special orders. Grey Knights vessels do not have access to Thunderhawk Annihilators, even when used with a Space Marine Crusade fleet list. Grey Knights are fearsome warriors even among other Space Marines; they may re-roll any boarding action result (the second roll stands).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="c1221c67-1f2f-427b-a46d-d073f8e00527" name="Cruisers" hidden="false" targetId="2f122bed-e8fd-4ca8-a8fd-bbb40cc56a94" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0bba6f5b-f24a-4eff-ac73-a73d8b8d3436" name="Prow Armament Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b0aa0ac-2aea-476c-9e3a-7789c53b310f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f3b8af4-21ea-47da-b3f3-0d127ed430ec" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5ff63bdf-03e9-4add-9733-aaff6b5e684a" name="Launch Bay" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b865103-e55c-457d-8e2d-afb70e2c6b6c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2f2b3e7f-9930-47e4-af98-3eec977120cb" name="Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawk: 20cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2 Squadrons</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="296df782-e7b5-45a5-97dc-5840ab7ee708" name="Torpedoes" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="864f7fdf-bc1e-4f81-9763-5bd3b4d7cab3" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="cf7f6280-a37d-47ee-8e67-b56f8eeacd40" name="Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="63c1c198-5353-420d-a984-0293ae33f2ad" name="Bombardment Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b28c5754-febf-4cc5-ac14-73f344d1237d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="bb6bc6fe-d069-4274-9fd7-76185e3d1b1e" name="Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">5</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e6935b21-2a65-42e1-8d27-f8a1a462f6b8" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="165.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="065e60e4-745c-4626-9ba8-86fcfa2e4ca0" name="Inquisition Blackship" publicationId="130eece3-6d5c-4302-9e56-e272bceaed62" page="48" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27cc3607-52a0-48b5-be51-0acc113e01b8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6e328667-5b2f-44ba-b18c-04bb59551b51" name="Blackship Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Battleship</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">12</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">20cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">5</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+Prow/ 5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3e0da71-2250-4f89-a1fc-c2a232a11f1a" name="Blackship Dorsal Lance Batteries" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="038dc43d-db63-44f8-a239-067d4b90926d" name="Blackship Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="233b7792-b197-4922-84b2-01c582ca8308" name="Blackship Starboard Weappons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">10</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bb90cb40-05c3-43cd-85b4-89c30ea7cfa0" name="Blackship Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="aefd84d0-f486-46ec-8e46-74fc9dc2e29e" name="Inquisition Blackship" hidden="false">
+          <description>They will never attempt to board an enemy vessel, but their embarked Adepta Sororitas Mission and platoons of Inquisitorial Storm Troopers adds +2 to their roll when defending against a boarding action. Hit and run attacks of any type suffer a -1 modifier. Even when used in fleets with Space Marines, they are not crewed by Space Marines and do not get additional Space Marine benefits.</description>
+        </rule>
+        <rule id="d0ef64da-0e0b-4557-bf34-aa71b42be534" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+        <rule id="f6dbdb24-b5d2-4202-98b7-c111c8962ecd" name="Gellar Field" hidden="false">
+          <description>The ship is sheathed in an especially powerful Gellar Field to shield the presence of its cargo of untrained psykers from the ravages of the warp. If the ship takes a Shields Collapsed critical hit, roll a D6. On a 4+, the Gellar Field is also damaged and must be repaired before the ship departs the table or disengages, or the ship counts as being destroyed! The Gellar Field is repaired normally as would be any other repairable critical damage, though this does not repair the Shields Collapsed critical.</description>
+        </rule>
+        <rule id="ad2fa174-b726-4107-937c-1b74a958884e" name="Special Objective" hidden="false">
+          <description>hese vessels are especially rare and fulfill one of the most important missions in all the Imperium. They are as carefully protected by Imperial forces as they are prized by the Emperor’s enemies, and it is not uncommon that they in and of themselves will be the object of a battle. This vessel counts as 500 victory points if destroyed. However, it provides the owning player +3 Renown if it survives the battle (+2 Renown if crippled).</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6459fa51-b287-4b44-9c6c-2b2b3083b85e" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a91c0022-9bd7-43db-be4d-2aaa1877e484" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="300.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b75b4809-1faf-42f1-8865-e88e6a3c3f9e" name="Inquisitor Lord" page="0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5cec57f8-3430-4f15-9b02-70cb1de831e2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ef6bc71c-a7bd-4b91-b3eb-a035717ecdcd" name="Inquisitor Lord" publicationId="130eece3-6d5c-4302-9e56-e272bceaed62" page="" hidden="false" typeId="436f6d6d616e64657223232344415441232323" typeName="Commander">
+          <characteristics>
+            <characteristic name="Leadership" typeId="4c65616465727368697023232344415441232323">Ldr 9</characteristic>
+            <characteristic name="Re-rolls" typeId="52652d726f6c6c7323232344415441232323">An Inquisitor Lord gets one re-roll, which may be
+used for any ship in the fleet.</characteristic>
+            <characteristic name="Pg." typeId="50672e23232344415441232323">51</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="08ba7647-ea2a-4809-8680-d159c5850ffe" hidden="false" targetId="466c65657420436f6d6d616e6465727323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8833494d-2d8c-41eb-92e6-c38929391a1c" name="Additional Re-Roll" page="0" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c59d24f9-15c2-4953-a33b-df41f9e215db" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="0515345e-e1a2-4f1e-9284-43f34387868d" name="Ordo" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="23f583ff-2be9-4d69-9111-a67cf99e7df5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e481b3ef-2f64-49c9-bf0b-27f9e7cdb0ee" name="Ordo Xenos" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="dd08f485-ba0c-4c80-b990-b83f07998da9" name="Select Refit" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4052106-ebd2-4a84-aa20-464e988a9821" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7930bd84-a622-4d32-91b4-dba39518c6e3" name="Ordo Hereticus" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e482b693-4107-416b-92f7-1ad5633d07b7" name="Ordo Malleus" page="0" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="3a672e0a-a617-430d-b5c8-63f2d6f2da5e" name="Grey Knights Terminator Boarding Party" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e48edb3f-d3a4-4022-98bd-36eada21093b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="50.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c8df883c-a112-415a-8a3e-d1f4b93ad891" name="Grey Knights Honour Guard" page="0" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c64b75ce-dfd8-4dd1-87bb-89aad6555300" name="Inquisitorial Cruiser" publicationId="130eece3-6d5c-4302-9e56-e272bceaed62" page="50" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec70c5c3-bbd3-4580-ba8b-d4493f15042b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="57062c9a-e81b-4496-aced-976e80219d57" name="Inquisitorial Cruiser Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Cruiser</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">8</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">45°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">2</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">6+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3335e8c0-c7bd-460f-a552-7cb37e4e8d38" name="Inquisitorial Cruiser Port Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c189d33b-ee2f-4295-9829-ed8c8238d993" name="Inquisitorial Cruiser Starboard Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">60cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">8</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="afcaa17b-0804-4ff4-82d7-7cab5e915f6a" name="Inquisitorial Cruiser" hidden="false">
+          <description>In addition to the profile listed above, Inquisitorial cruisers follow special rules specific to the Ordo they serve under.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="87bb896c-424a-41d2-95dc-1c3c4c4c17d5" name="Cruisers" hidden="false" targetId="2f122bed-e8fd-4ca8-a8fd-bbb40cc56a94" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3e760150-052a-413e-b9c8-8c839bcc8585" name="Prow Weapons Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e101b747-e598-4a4f-a1a4-66f49ecf04f2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94e3e791-fd04-4d4d-b6e4-5514b7c542db" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5a0a3eca-0a69-4fe2-b429-69513d2ef591" name="Prow Launch Bay" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="315fef03-92b4-49ed-8d13-872acc0a68a9" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="378a41a1-bdd2-4d6a-9344-0c82cfed6382" name="Prow Launch Bay" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">Thunderhawks: 20cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="7802c9c6-7c71-404f-ab7f-ea3eab5bb787" name="Prow Launch Bay" hidden="false">
+                  <description>Inquisitorial cruisers do not have access to Thunderhawk Annihilators, even if included in a Space marine Crusade Fleet.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9fe1c4ce-5180-413c-a9c8-309f42d3baec" name="Prow Torpedo Tubes" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="421c47c1-d66d-4ae4-b924-2def02337368" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="acd9cc36-2be0-4ee5-b001-0bdb5517caa3" name="Prow Torpedo Tubes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="c5b5af65-2639-499f-8e2e-9d0bf330b0b4" name="Prow Torpedo Tubes" hidden="false">
+                  <description>Torpedo tubes may fire normal or boarding torpedoes. If this option is taken, the ship does not have to be modified to serve as an Exterminatus vessel in the same manner as Space Marine battle barges, as they are always equipped with virus bombs and cyclotronic warheads as standard. As such, when in position to exterminate a planet, it may do so on a roll of 3+ instead of 4+.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="63a4a5e3-c7df-43bc-a933-a6b4c5cd0be3" name="Dorsal Weapons Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea225b4b-7cd3-43d9-9b9d-21a230ae819c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3284bf2-e11e-4e34-9e45-6a345df24104" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="82aafaf5-5a7b-441c-9cfd-6e2c11def162" name="Dorsal Bombardment Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec102f61-2c6d-4891-b190-44c64432a1ba" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2b02bb5b-e18e-4f72-8140-f4a04cacae13" name="Inquisitorial Cruiser Dorsal Bombardment Cannon" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">6</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b209dd57-3f77-49dc-88b5-6317f5ef381a" name="Dorsal Lance Battery" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d326b8fa-4ead-4363-befc-6efbe7a65003" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="aa4760d4-2d9a-4b12-9ac8-14746cf7a03d" name="Dorsal Lance Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                  <characteristics>
+                    <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">45cm</characteristic>
+                    <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                    <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d0ca8f4f-6583-4c6d-9deb-c7dbc962ffd1" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="270.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="f8637a8a-5c29-4869-bfa9-9fdc9e2d86b4" name="Sword Frigate" hidden="false" collective="false" import="true" targetId="0556373b-f11e-41c4-9488-24e3985d00d3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7711ed8f-18c5-4bba-81fb-8fc2e2639142" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="0745604d-c6de-4972-9a56-df6cb52e34f5" name="Nova Frigate" hidden="false" collective="false" import="true" targetId="b3016d46-d650-4d8e-b125-e05dcf31e48f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7711ed8f-18c5-4bba-81fb-8fc2e2639142" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="1ab4f4dd-7e48-4962-a262-bdf78ac8d3a6" name="Hunter Destroyer" hidden="false" collective="false" import="true" targetId="c7157f09-e408-4ed3-afea-cc042436ed98" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7711ed8f-18c5-4bba-81fb-8fc2e2639142" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="5e37b5b0-66aa-4a87-8b05-3166d1a3984f" name="Gladius Frigate" hidden="false" collective="false" import="true" targetId="775a6485-1c6f-4986-bcce-dd819621fd26" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7711ed8f-18c5-4bba-81fb-8fc2e2639142" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="dcbbc3f4-0775-4d57-a53b-8473a57f454c" name="Firestorm Frigate" hidden="false" collective="false" import="true" targetId="ca96f3b7-3206-4e8a-b7c6-f05ba4e625f9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7711ed8f-18c5-4bba-81fb-8fc2e2639142" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="9b47a87a-9637-406b-abcf-68c3c507bc0c" name="Cobra Destroyer" hidden="false" collective="false" import="true" targetId="5b4a8869-04ff-454d-a030-c9a458a303bb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7711ed8f-18c5-4bba-81fb-8fc2e2639142" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="a72338d3-e1cd-4cd5-b93f-b8d9886f9ba4" name="Falchion Frigate" hidden="false" collective="false" import="true" targetId="3e106396-c99f-400d-8c73-b25b5038d984" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7711ed8f-18c5-4bba-81fb-8fc2e2639142" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="5b4a8869-04ff-454d-a030-c9a458a303bb" name="Cobra Destroyer" page="0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="903fc7bf-6a81-458d-8820-5679940e9579" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1b37f6c8-1b38-438f-80b1-02910e20bb4b" name="Cobra Class Destroyer" publicationId="6edb9da3-c572-44f4-99ef-87be8eed0f52" page="114" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">4+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="1f01830a-9c9f-4b33-95ce-88f3fa04781d" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="68e48852-cc5c-4b08-9325-1ffff5479071" name="Prow Torpedos" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e97f6f66-c7b9-419b-9a5b-d977da184c22" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="68caf251-09a9-41e1-bad8-def223dd42cb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="abcc3a1f-7eae-472e-af13-a9c30a0ebc63" name="Cobra Prow Torpedos" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="501f899d-eb30-4bdf-b981-2a8c78d7d295" name="Famous Ships" hidden="false" collective="false" import="true" defaultSelectionEntryId="8c5dc5c2-053c-4144-aa1e-a98ac81e0153">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="77289315-76c2-4ab0-8f1f-53a7f13dbd5c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="00c07c93-e801-4ca0-87e3-43dbd53a7815" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8c5dc5c2-053c-4144-aa1e-a98ac81e0153" name="As Standard" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5f2f5f9-5e8e-478d-9a8e-f8dc66dc3c7c" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="5f650321-b5cc-4d71-bbf8-3394726007c4" name="Weapons Battery" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b3c249b-4666-425e-b4d9-e834e2a6d45c" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a806b6a-3f25-4c90-b07d-b19968fdc6ca" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="e95f76f1-a3c1-4ff4-b123-3ac30c15a18f" name="Cobra Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+                      <characteristics>
+                        <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                        <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                        <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="35876dbe-f222-4465-b479-f7ff81d7a355" name="24th Destroyer Squadron &apos;Widowmaker&apos;" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c2834f1-543a-4f4d-a5f7-dcad1e6efe02" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="a37fe6b7-bf98-49cb-ad95-5c71dad395a6" name="Long Range Detection Gear" hidden="false">
+                  <description>Doubles the Leadership bonus from enemy contacts (enemies on special orders) from +1 to +2.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d2aa56fd-9df4-4f87-b918-1f65d6eaf125" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3e106396-c99f-400d-8c73-b25b5038d984" name="Falchion Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d18b645-89ef-42d7-a4f1-a6992dc3e403" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8cc8eafc-708f-4de1-9940-558d4f56d366" name="Falchion Class Escort" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2be486ea-06fa-4554-9e24-56a529d37373" name="Falchion Prow Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">3</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c3de4375-b76a-43ef-bb72-ff816b1aa79c" name="Falchion Prow Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="3dd2ce05-269e-4253-9cdd-3b87b97543bc" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="30af9374-5d0b-4121-abbe-4353fea4c367" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ca96f3b7-3206-4e8a-b7c6-f05ba4e625f9" name="Firestorm Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2b7a275-c310-4dd4-8146-81a5e9489ddc" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a7675037-4e13-45ae-b8f0-8cc6a2bb3f36" name="Firestorm Class Frigate" publicationId="6edb9da3-c572-44f4-99ef-87be8eed0f52" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">☐</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="03560c34-db85-479a-89dd-cd8ac7da980c" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5a18179f-3585-4777-8a35-5c7d79c337ff" name="Prow Lance" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="baf0fc31-5e16-49c0-9135-0de4f0655a5d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="72c8d9ad-abd5-4632-95fc-0838e4598213" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="63f11354-2169-4017-a6dc-a488ac223eb2" name="Prow Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="03497431-e0ee-40e8-a315-d3dd1db8ff7b" name="Weapons Battery (30/2)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfe9944c-5508-4ace-ab2b-d64ca01c4d8d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="306b96ed-51d7-45d2-82ec-8673b79b2583" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ff5354f6-a515-4d3a-91c9-c3ebeb08f4ee" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="de632f76-5e78-407a-8953-fb503e82045e" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="775a6485-1c6f-4986-bcce-dd819621fd26" name="Gladius Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="244f4931-0bf4-43f0-ba61-26d853c3828f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="56cb8377-1e77-4acf-8076-718e44ff1398" name="Gladius Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="31be3c45-e69d-4a6c-9485-a30f38b1e09e" name="Gladius Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="dfec20c5-1d28-4d71-b779-e5322dbc483a" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="eed72534-3604-4250-98e7-f27c41dfc62d" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c7157f09-e408-4ed3-afea-cc042436ed98" name="Hunter Destroyer" page="0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="541bcc76-68a9-4d15-b839-72aff7400345" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a179a87e-e2c3-4139-85e0-36e281697958" name="Hunter Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">35cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="70cef3e3-06cb-4ae0-bf16-ccb3fe5151f0" name="Hunter Torpedoes" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Front</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="660db51e-32aa-4ac6-8b92-317183a84a5a" name="Hunter Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="846ac45c-7c41-4b2f-9cf1-ce9b7c1a2844" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4bb28595-cafd-4db4-a333-96707433b8b5" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0556373b-f11e-41c4-9488-24e3985d00d3" name="Sword Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1178ff77-e031-40db-b0fb-20102c1f92ef" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bbb4a40a-df00-4f3f-aaa3-19523f5f1ee8" name="Sword Class Frigate" publicationId="6edb9da3-c572-44f4-99ef-87be8eed0f52" page="113" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort/1</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">☐</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">25</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="cc1318eb-7306-4e2d-a469-8c6d6ee11de9" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="aa3f260a-d7da-443a-912a-967fdf3cf026" name="Weapons Battery (30/4)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1d9a196-f6ba-4549-82d4-ffae3dd2a1ac" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e72eed9-3ae6-47e3-9b34-52b63d16456b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f4d21f7a-2cc9-4089-8e29-f0727ae7774e" name="Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+              <characteristics>
+                <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30</characteristic>
+                <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">4</characteristic>
+                <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/right/front</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="1ce7f20f-df65-441f-9800-563c8ed3f8fd" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3016d46-d650-4d8e-b125-e05dcf31e48f" name="Nova Frigate" page="0" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="972e1ca4-c512-47c7-8ab2-73638a81bd3b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="928749d4-cb1f-4427-aec1-e295de904e06" name="Nova Profile" hidden="false" typeId="556e697423232344415441232323" typeName="Unit">
+          <characteristics>
+            <characteristic name="Type" typeId="5479706523232344415441232323">Escort</characteristic>
+            <characteristic name="Hits" typeId="4869747323232344415441232323">1</characteristic>
+            <characteristic name="Speed" typeId="537065656423232344415441232323">35cm</characteristic>
+            <characteristic name="Turns" typeId="5475726e7323232344415441232323">90°</characteristic>
+            <characteristic name="Shields" typeId="536869656c647323232344415441232323">1</characteristic>
+            <characteristic name="Armour" typeId="41726d6f757223232344415441232323">5+</characteristic>
+            <characteristic name="Turrets" typeId="5475727265747323232344415441232323">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0de3083e-db5b-40ee-98ae-24edc55c85eb" name="Nova Lance" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">1</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f4183026-5c3a-4dc8-a181-edd690a4d4af" name="Nova Weapons Battery" hidden="false" typeId="41726d616d656e7423232344415441232323" typeName="Armament">
+          <characteristics>
+            <characteristic name="Range/Speed" typeId="52616e67652f537065656423232344415441232323">30cm</characteristic>
+            <characteristic name="Firepower/Str" typeId="46697265706f7765722f53747223232344415441232323">2</characteristic>
+            <characteristic name="Fire Arc" typeId="466972652041726323232344415441232323">Left/Front/Right</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="10cf51f4-32da-40dc-99f5-b850d361d1df" hidden="false" targetId="4573636f72747323232344415441232323" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4f838d49-41fa-4705-9ddd-51ef464f6a7e" name="Leadership" hidden="false" collective="false" import="true" targetId="eda92cb5-e22e-40b0-894c-c789ff4ce6bc" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="45.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="7c4e87ff-caab-48e6-b97f-6583af301f98" name="Ordnance" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="417971cb-9585-4205-b21d-6f0252d488d4" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d91da90a-6934-4142-87c9-b05baba159b6" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="a1e7737a-1c4a-4799-8672-50587a9dc5d2" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="0c2c5c73-a2f5-4b5d-9afd-7dfdb9ee7606" name="Swiftdeath Fighters, Doomfire Bombers &amp; Dreadclaw Assault Craft" hidden="false">
+              <description>Ships with launch bays can have a mixture of Swiftdeath Fighters, Doomfire Bombers and Dreadclaw Assault Craft. Ships with torpedo tubes are armed with normal and boarding torpedoes.</description>
+            </rule>
+            <rule id="7e1d2e59-f693-4bc0-87fd-9321d896b645" name="Fighter&apos;s Rules" publicationId="6edb9da3-c572-44f4-99ef-87be8eed0f52" page="29" hidden="false">
+              <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+            </rule>
+            <rule id="b5b2a636-7601-4ff4-a1d9-b7dcf1f0ac16" name="Bomber&apos;s Rules" publicationId="6edb9da3-c572-44f4-99ef-87be8eed0f52" page="30" hidden="false">
+              <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+            </rule>
+            <rule id="4d7e4a13-d70a-4d47-afe5-9bdb3e689fe5" name="Assault Boat&apos;s Rules" publicationId="6edb9da3-c572-44f4-99ef-87be8eed0f52" page="30" hidden="false">
+              <description>Attack Vs Fighters: The fighters overwhelm the assault boats and then return to their mothership for refuelling and rearming. Remove both the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The assault boats simply manouvre arround the enemy ordnance. Leave both markers in play.
+
+Attack Vs Ships: The assault boats make an attack run on the ship. Immediatly conduct a hit-and-run raid against the ship for each assault boat squadron. Hit-and-run raids are detailed in the Advanced Rules. After the attack the assault boats return to their ship to be reloaded with troops and refuelled. Remove the Squadron marker from play when the attack is made in the end phase.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="74503261-2af3-4d46-808e-3212536b870a" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="1d7e1503-1529-4d12-872c-2e96fa4bdc8b" name="Thunderhawk Gunship" hidden="false">
+              <description>A ship with a Chaos Space Marine crew may be equipped with Thunderhawk Gunships but if so it may only carry Thunderhawks and may not launch Swiftdeaths, Doomfires and Dreadclaws. Furthermore the launch capacity of the ship’s bays’ is halved (round down). This is because the launch bays have to be substantially rebuilt to deal with the larger Thunderhawks.
+
+Thunderhawk gunships combine the abilities of assault boats and fighters, and move like any other attack craft, with a speed of 20cm. A Thunderhawk counter that is intercepted by enemy fighters or moves onto an enemy ordnance marker removes the enemy as fighters would. However as they are extremely resilient, roll a dice when this happens. On a score of 4+, do not remove the Thunderhawk marker (However, Thunderhawks can only remove one enemy marker in any given ordnance phase and stop moving as soon as they intercept an enemy. Also, if a Thunderhawk marker uses its save to remain in play and comes into contact with another ordnance marker in the same ordnance phase, it is removed normally.). Note that against Eldar fighters, which also have this ability, it is possible that you end up with neither marker being removed! If this happens, either marker is free to move away in their next turn, or they can stay in place and attempt to remove their enemy again.
+
+When a Thunderhawk marker moves into contact with an enemy ship’s base, they are treated exactly like assault boats (with the +1 bonus to their hit and run attack for being Space Marines). Using its 4+ save does not prevent it from attacking a ship if in base contact with one when stopped. Once a Thunderhawk marker has made its hit and run attack, it is removed from play.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="9b64d623-4a36-4084-acc4-b6315d5890e1" name="Bomber&apos;s Rules" publicationId="6edb9da3-c572-44f4-99ef-87be8eed0f52" page="30" hidden="false">
+      <description>Attack Vs Fighters: The fighters quickly eliminate the lumbering bombers before returning to their mother ship for rearming and refuelling. Remove the defending and attacking markers from play.
+
+Attack Vs Other Ordnance Markers: The bombers succeed in getting out of the way but nothing more. Leave both markers in play. These Include bombers with a 4+ save.
+
+Attack Vs Ships: The bombers make an attack run on the ship. Make D6 rolls to hit against the ship&apos;s lowest armour value for each attacking bomber squadron. The number of attacks the squadron makes reduces by one for each turret on the ship. Remove the squadron markers once the attack ha sbeen made. Ships massing turrets with the one under attack do not affect this number.</description>
+    </rule>
+    <rule id="2f3660d0-1b16-46f3-8a63-9b9d45dd6171" name="Fighter&apos;s Rules" publicationId="6edb9da3-c572-44f4-99ef-87be8eed0f52" page="29" hidden="false">
+      <description>Attack Vs Ordinance Markers: The defenders are scattered or destroyed in the fighting. the victorious fighters return to their mother ship for rearming and refuelling. Remove both the defending and attacking markers from play.
+
+Attack Vs Ships: The fighter squadrons&apos;s puny weapons make no impression on the ship at all but they steer clear of the ship&apos;s turret defences. Leave the Squadron marker in play. Fighters in base ocntact with friendly ships may move with them to screen against enemy ordnance. If they do so, they cannot then move in the own&apos;s player&apos;s ordnance phase. Multiple fighters doing so are treated as a wave.</description>
+    </rule>
+    <rule id="b881a8bf-71fb-4ade-8e46-d78f2b476bd5" name="Improved Thrusters" hidden="false">
+      <description>Moves +1D6 on All Ahead Full special orders.</description>
+    </rule>
+    <rule id="45161913-53b4-4753-96db-7505460736ca" name="May not use the &quot;come to new heading&quot; special order" hidden="false"/>
+    <rule id="3bfec7bc-0556-4d35-96bc-0e6358909885" name="Emergency Energy Reserves" hidden="false">
+      <description>When crippled, the ship only reduces turrets, shielding and weapons by 25% rather than 50%. The vessel still counts as crippled in every other respect.</description>
+    </rule>
+    <rule id="4a5e7334-80d7-4a2a-a94a-eebc06856c20" name="Repulsor Shielding" hidden="false">
+      <description>Ignore all negative effects of having a blast marker or gas clouds in contact with the ship’s base as it applies to leadership, movement and repairing critical damage. This effect goes away if the ship suffers “Shields Collapsed” critical damage.</description>
+    </rule>
+    <rule id="46f44cbd-5b13-4fb4-a0dd-75ba00a4cba1" name="Fleet Defense Turrets" hidden="false">
+      <description>Up to two turrets on the ship are exchanged for fleet defense turrets capable of protecting itself or any one other vessel within 15cm each ordnance phase, adding +2 to the turret strength of the ship it is defending (this does not alter bomber attack rolls when used to defend another vessel). These otherwise work exactly as normal turrets do in all other respects.</description>
+    </rule>
+    <rule id="4098a469-7f7d-49e0-a2c4-76332014db96" name="Gyro-stabilized Targeting Matrix" hidden="false">
+      <description>Ship weapons are reduced to 75% instead of 50% when on All Ahead Full, Come To New Heading or Burn Retros special orders. Nova Cannon still cannot fire.</description>
+    </rule>
+    <rule id="6736b58d-48be-471a-88eb-5c3f73a9f370" name="Augmented Weapon Relays" hidden="false">
+      <description>Weapon batteries shift left on the gunnery table before all other modifiers are applied. Lance hits count double on rolls of a 6.</description>
+    </rule>
+  </sharedRules>
+</catalogue>
